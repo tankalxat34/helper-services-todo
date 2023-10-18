@@ -313,14 +313,6 @@ TaskField._updateView();
 
 window.onload = () => {
     document.querySelector("#button-addtolist").addEventListener("click", TaskField.addByUserInput);
-    document.querySelector("#kbmain-shift").addEventListener("click", TaskField.shift);
-    document.querySelector("#kbmain-pop").addEventListener("click", TaskField.pop);
-    document.querySelector("#kbmain-show-even").addEventListener("click", TaskField.markOnlyEven);
-    document.querySelector("#kbmain-show-odd").addEventListener("click", TaskField.markOnlyOdd);
-
-    document.querySelector("#kb-manage_fields").addEventListener("mouseleave", TaskField.unmarkSelection);
-
-    document.querySelectorAll("#all-tasks > *").onselectionstart = () => null;
 }
 
 userinput.addEventListener("keydown", (e) => {
