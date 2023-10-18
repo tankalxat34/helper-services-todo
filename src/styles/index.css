@@ -1,0 +1,57 @@
+/* Убираем стандартные браузерные стили скролла */
+::-webkit-scrollbar {
+    width: 5px;
+    /* Толщина скролла */
+}
+::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;
+    /* Цвет скролла */
+    border-radius: 5px;
+    /* Скругление углов скролла */
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #7e7e7e;
+    /* Цвет скролла при наведении */
+}
+/* Дорожка (фон) скролла будет прозрачной */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.helper-service_title {
+    font-style: italic;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
+}
+
+.taskelem {
+    transition: all .3s;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 2px;
+    height: 50px;
+}
+.taskelem:hover {
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+
+.line-through {
+    text-decoration: line-through;
+}
+
+#input-field > * {
+    margin-right: 5px;
+}
+
+
+
+.task-keyboard.close {
+    display: none;
+}
+.task-keyboard {
+    display: initial;
+    /* height: 30px; */
+}
